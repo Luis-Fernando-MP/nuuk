@@ -11,12 +11,9 @@
 			name="keywords"
 			content="Helados, Artesanales, Lima, Perú, NUUK, Dulce, Gourmet, Tradición, Innovación"
 		/>
-		<link
-			href="//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/home.css" />
 	</head>
 	<body>
 		<!-- Header -->
@@ -25,12 +22,12 @@
 			<nav class="nav">
 				<a class="nav-link btn" href="index.html">🏠 Inicio</a>
 				<a class="nav-link btn" href="sabores.html">🍨 Nuestros Sabores</a>
-				<a class="nav-link btn" href="historia.html">📜 Nuestra Historia</a>
+				<a class="nav-link btn" href="history.html">📜 Nuestra Historia</a>
 				<a class="nav-link btn active" href="contacto.html">📞 Contáctenos</a>
 			</nav>
-
 			<div class="header-logo">
 				<a href="#">
+					<h2>HELADOS</h2>
 					<h1>NUUK</h1>
 				</a>
 				<p class="tag">
@@ -48,6 +45,10 @@
 				en Lima, Perú. Hechos con ingredientes frescos y locales, nuestros helados combinan
 				tradición con innovación. ¡Ven y disfruta de un sabor único en cada bocado! 🍦✨
 			</p>
+			<video controls width="500" muted>
+				<source src="./videos/heladosvideo.mp4" type="video/mp4" />
+				<track kind="captions" src="./videos/subs.vtt" srclang="es" label="Español" default />
+			</video>
 		</div>
 
 		<div class="row">
@@ -87,6 +88,8 @@
 				<a class="row-col" href="historia.html">
 					<img src="images/pic01.jpg" alt="Nuestra Historia" />
 					<h2>📜 Nuestra Historia</h2>
+					<h3></h3>
+
 					<p>
 						NUUK nació en el corazón de Lima con el sueño de ofrecer helados que capturan la esencia
 						de la gastronomía peruana. Cada uno de nuestros sabores cuenta una historia de tradición
@@ -96,6 +99,7 @@
 				<a class="row-col" href="historia.html">
 					<img src="images/pic02.jpg" alt="Calidad Artesanal" />
 					<h2>🏅 Calidad Artesanal</h2>
+
 					<p>
 						Nos enorgullece utilizar ingredientes 100% naturales y locales en la creación de
 						nuestros helados. Desde la fruta fresca hasta los lácteos, todo es seleccionado con
@@ -135,7 +139,7 @@
 		</div>
 
 		<!-- Footer -->
-		<div class="footer">
+		<footer class="footer">
 			<header class="footer-contact">
 				<h2>📞 Contáctenos</h2>
 				<span class="byline"
@@ -157,6 +161,6 @@
 					<a href="#" class="fa fa-instagram">Instagram</a>
 				</li>
 			</ul>
-		</div>
+		</footer>
 	</body>
 </html>

@@ -1,0 +1,154 @@
+.header {
+	width: 100%;
+	height: 80dvb;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	padding: 20px;
+	.header-fondo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		filter: brightness(30%);
+		object-position: 50% 50%;
+		top: 0;
+		left: 0;
+	}
+	.header-logo {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		h1,
+		h2,
+		p {
+			color: var(--fn1);
+			text-align: center;
+			i {
+				opacity: 0.6;
+			}
+		}
+		h1 {
+			font-size: 5em;
+		}
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
+
+.features {
+	width: 100%;
+	height: 80vh;
+	background-color: #1d1413;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	padding: 50px;
+	h2 {
+		color: var(--fn1);
+		font-size: 3em;
+		text-transform: uppercase;
+	}
+	p {
+		color: var(--fn2);
+		width: 50%;
+		text-align: center;
+	}
+	video::cue {
+		background-color: var(--bg2);
+		font-size: 1.2em;
+		padding: 5px;
+	}
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	padding: 50px;
+	.row-col {
+		padding: 20px;
+		background-color: var(--bg1);
+		height: 300px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 10px;
+		text-align: center;
+		h3 {
+			color: var(--fn1);
+			font-size: 1.5em;
+		}
+		p {
+			width: 70%;
+			color: var(--fn2);
+		}
+	}
+}
+
+.main {
+	width: 100%;
+	padding: 20px;
+	min-height: 100vh;
+	.row {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.row-col {
+		width: 500px;
+		overflow: hidden;
+		height: auto;
+		padding: 20px;
+		background-color: transparent;
+		img {
+			width: 100%;
+			height: 500px;
+			border-radius: 10px;
+			object-fit: cover;
+		}
+		h2 {
+			color: var(--bg1);
+		}
+		p {
+			color: var(--bg2);
+			font-weight: lighter;
+			opacity: 0.5;
+		}
+	}
+}
+
+.tweet {
+	width: 100%;
+	height: 80vh;
+	background-color: rgba(128, 128, 128, 0.262);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	h3 {
+		text-align: center;
+		font-weight: lighter;
+		b {
+			font-weight: bold;
+		}
+	}
+}
