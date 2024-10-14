@@ -1,0 +1,56 @@
+@media (width < 646px) {
+	body {
+		font-size: 10px !important;
+		h2.sub-title {
+			display: flex;
+			flex-direction: column;
+		}
+		.container {
+			grid-template-areas:
+				'nav nav'
+				'header header'
+				'main main';
+			grid-template-rows: 130px 50px auto !important;
+			grid-template-columns: 100vw !important;
+			min-height: max-content;
+			height: max-content;
+		}
+		main.main {
+			padding: 0;
+		}
+		header.header {
+			padding: 5px 10px;
+		}
+
+		.nav {
+			gap: 0;
+			padding: 10px 0;
+			justify-content: center;
+			.nav-links {
+				flex-direction: row;
+			}
+		}
+		footer.footer {
+			padding: 50px;
+		}
+	}
+}
+
+@media (width <= 1090px) {
+	body {
+		footer.footer {
+			flex-direction: column;
+			gap: 15px;
+
+			hr {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (width > 1090px) and (width <= 1200px) {
+	body {
+		font-size: 12px !important;
+	}
+}

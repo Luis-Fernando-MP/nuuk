@@ -67,8 +67,8 @@
 }
 
 .phrase {
-	height: 100vh;
 	min-height: 100vh;
+	height: max-content;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -95,7 +95,7 @@
 	border-radius: 10px;
 	padding-bottom: 15px;
 	background-color: var(--bg2);
-
+	transition: all 0.3s ease;
 	&.middle {
 		width: 400px;
 
@@ -117,15 +117,13 @@
 
 	&:hover {
 		transform: scale(1.05);
-		transition: transform 0.3s ease;
 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	}
 }
 
 .features {
 	width: 100%;
-	height: 100vh;
-	min-height: 100vh;
+	height: max-content;
 	position: relative;
 	border-radius: 15px;
 	overflow: hidden;
@@ -171,7 +169,7 @@
 
 .contact {
 	width: 100%;
-	min-height: 100vh;
+	height: max-content;
 	background-color: var(--bg2);
 	padding: 200px 0;
 

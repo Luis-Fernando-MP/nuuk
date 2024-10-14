@@ -14,6 +14,7 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/global/index.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
 		<link rel="stylesheet" href="./styles/home.css" />
 	</head>
 	<body>
@@ -35,24 +36,24 @@
 			</header>
 			<nav class="nav">
 				<div class="nav-links">
-					<a href="/" class="nav-link active">
+					<a href="/PC2/" class="nav-link active">
 						<i data-lucide="home"></i>
 					</a>
-					<a href="/Sabores" class="nav-link">
+					<a href="/PC2/Sabores/" class="nav-link">
 						<i data-lucide="coffee"></i>
 					</a>
-					<a href="/Galería" class="nav-link">
+					<a href="/PC2/Galería/" class="nav-link">
 						<i data-lucide="image"></i>
 					</a>
-					<a href="/Eventos" class="nav-link">
+					<a href="/PC2/Eventos/" class="nav-link">
 						<i data-lucide="calendar"></i>
 					</a>
-					<a href="/Contacto" class="nav-link">
+					<a href="/PC2/Contacto/" class="nav-link">
 						<i data-lucide="handshake"></i>
 					</a>
 				</div>
 
-				<a href="/" class="nav-logo">
+				<a href="/PC2/" class="nav-logo">
 					<i data-lucide="cup-soda"></i>
 					<h2>NUUK</h2>
 				</a>
@@ -226,19 +227,19 @@
 			<aside class="social">
 				<div class="social-container">
 					<div class="social-slider">
-						<a href="/sabores">
+						<a href="/PC2/Sabores/">
 							<img src="./assets/social/1.jpg" alt="social-1" />
 						</a>
-						<a href="/sabores">
+						<a href="/PC2/Sabores/">
 							<img src="./assets/social/2.jpg" alt="social-2" />
 						</a>
-						<a href="/sabores">
+						<a href="/PC2/Sabores/">
 							<img src="./assets/social/3.jpg" alt="social-3" />
 						</a>
-						<a href="/sabores">
+						<a href="/PC2/Sabores/">
 							<img src="./assets/social/4.jpg" alt="social-4" />
 						</a>
-						<a href="/sabores">
+						<a href="/PC2/Sabores/">
 							<img src="./assets/social/5.jpg" alt="social-5" />
 						</a>
 					</div>
@@ -250,7 +251,23 @@
 		<script defer>
 			lucide.createIcons()
 			document.addEventListener('DOMContentLoaded', function () {
-				const texts = ['NUUK', 'HELADERÍA', 'LIMA', 'PERÚ']
+				const texts = [
+					'NUUK',
+					'LIMA',
+					'PERÚ',
+					'CAFE',
+					'POSTRE',
+					'FOOD',
+					'FRÍO',
+					'ICE',
+					'SABOR',
+					'DULCE',
+					'VERANO',
+					'COOL',
+					'FRESH',
+					'RICO'
+				]
+
 				const titleElement = document.querySelector('h1.tit')
 				let textIndex = 0
 				let charIndex = 0

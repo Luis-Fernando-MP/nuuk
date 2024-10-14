@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 @import url('./vars.css');
+@import url('./mobile.css');
 @import url('./structure.css');
 @import url('./footer.css');
 
@@ -135,14 +136,14 @@ i {
 
 .simple-grid {
 	width: 100%;
-	height: 100vh;
-	min-height: 100vh;
+	height: max-content;
 	flex-direction: column;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
 	background-color: var(--bg3);
+	padding: 50px 0;
 	.simple-grid-list {
 		gap: 20px;
 		width: 100%;
