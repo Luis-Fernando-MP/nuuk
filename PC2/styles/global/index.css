@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@import url('./vars.css');
+@import url('./structure.css');
+@import url('./footer.css');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+body {
+	font-family: 'Baloo Paaji 2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-optical-sizing: auto;
+	width: 100dvw;
+	position: relative;
+	min-height: 100dvh;
+	max-height: 100dvh;
+	line-height: var(--line-height);
+	height: 100dvh;
+	font-size: 14px;
+	flex-direction: column;
+	display: flex;
+	color: var(--fnt1);
+	background-color: var(--bg2);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+h1 {
+	font-weight: 900;
+	line-height: calc(var(--line-height) + 0.1);
+	font-size: var(--h1);
+}
+h2 {
+	font-weight: 800;
+	font-size: var(--h2);
+	line-height: calc(var(--line-height) + 0.05);
+}
+h3 {
+	font-weight: 700;
+	font-size: var(--h3);
+}
+h4 {
+	font-weight: 500;
+	font-size: var(--h4);
+}
+h5 {
+	font-weight: 500;
+	font-size: var(--h5);
+}
+p {
+	font-size: var(--p);
+}
+span {
+	font-size: var(--span);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+	color: var(--fnt1);
+}
+
+h5,
+p,
+a,
+input,
+textarea,
+button,
+select,
+span {
+	color: var(--fnt2);
+	text-wrap: pretty;
+	font-weight: 400;
+	&:focus {
+		outline: none;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+svg,
+i {
+	width: 20px;
+	height: 20px;
+	display: block;
+	stroke: black;
+}
+
+.baloo-paaji {
+	font-family: 'Baloo Paaji 2', sans-serif;
+	font-optical-sizing: auto;
+}
+
+.lilita-one {
+	font-family: 'Lilita One', sans-serif;
+}
+
+.sub-title {
+	text-transform: lowercase;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 3em;
+	margin-bottom: 50px;
+
+	b {
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+}
+
+.simple-grid {
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background-color: var(--bg3);
+	.simple-grid-list {
+		gap: 20px;
+		width: 100%;
+		flex-wrap: wrap;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.item {
+	width: 300px;
+	height: 250px;
+	border-radius: 10px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade {
+	opacity: 0;
+	animation: fadeInUp 1.5s ease-in-out forwards;
+}

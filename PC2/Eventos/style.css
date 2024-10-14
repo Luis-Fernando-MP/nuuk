@@ -1,0 +1,154 @@
+main.main.page-events {
+	gap: 20px;
+}
+
+.eHeader {
+	width: 100%;
+	height: 30vh;
+	min-height: 30vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0;
+	flex-direction: column;
+	position: relative;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: blur(6px) brightness(30%);
+		transition: filter 0.3s ease; /
+	}
+
+	h2 {
+		max-height: 40px;
+		transition: all 0.3s ease;
+	}
+
+	h2,
+	h4 {
+		position: relative;
+		color: var(--bg1);
+	}
+
+	&:hover img {
+		filter: blur(4px) brightness(10%);
+	}
+
+	&:hover h2 {
+		font-size: 4em;
+	}
+}
+
+.events {
+	width: 100%;
+	min-height: 70vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 10px;
+	align-items: center;
+	gap: 20px;
+	background-color: var(--tn2);
+
+	.event {
+		background-color: var(--bg2);
+		border: 1.5px solid var(--bg3);
+		text-align: center;
+		width: 300px;
+		border-radius: 10px;
+		display: flex;
+		gap: 15px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+		&:nth-child(2) {
+			width: 330px;
+			padding: 40px;
+		}
+
+		svg {
+			width: 50px;
+			height: 50px;
+		}
+
+		button {
+			padding: 10px;
+			border-radius: 5px;
+			background-color: var(--tn2);
+			color: var(--bg1);
+			font-size: 1.2em;
+			transition: background-color 0.3s ease;
+		}
+
+		&:hover {
+			transform: translateY(-5px); 
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+		}
+
+		&:hover button {
+			background-color: var(--tn1);
+		}
+	}
+}
+
+.next-events {
+	background-color: var(--bg2);
+	padding: 15px;
+
+	.next-event__container,
+	& {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.nEvents-card {
+		background-color: var(--bg1);
+		width: 60%;
+		border-radius: 15px;
+		padding: 15px;
+		border: 1.5px solid var(--bg3);
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: flex-start;
+		transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 4px 15px var(--bg3); 
+		}
+	}
+
+	.nEvents-info {
+		gap: 10px;
+		display: flex;
+		flex-direction: column;
+		padding: 10px 20px;
+
+		> div {
+			display: flex;
+			gap: 10px;
+		}
+	}
+
+	button {
+		padding: 8px 10px;
+		background-color: var(--tn1);
+		color: var(--bg1);
+		border-radius: 5px;
+		font-size: 1.2em;
+		transition: background-color 0.3s ease;
+	}
+}

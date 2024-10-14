@@ -1,0 +1,27 @@
+:root {
+	--bg1: #e3e2fdeb;
+	--bg2: #d8d9fdeb;
+	--bg3: #ccc0ffeb;
+
+	--fnt1: #000;
+	--fnt2: #3c3561;
+
+	--tn1: #4747dc;
+	--tn2: #7878ff;
+	--tn3: #6300f746;
+
+	--xl: 2.5em;
+	--h1: 2.2em;
+	--h2: 1.9em;
+	--h3: 1.6em;
+	--h4: 1.4em;
+	--h5: 1.2em;
+	--p: 1.1em;
+	--span: 0.95em;
+
+	--line-height: 1.6;
+}
+
+.xl {
+	font-size: var(--xl);
+}

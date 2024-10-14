@@ -1,0 +1,305 @@
+.mHeader {
+	width: 100%;
+	height: 140vh;
+	min-height: 140vh;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 40px;
+	pointer-events: none;
+	user-select: none;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(30%) saturate(1.6);
+		border-radius: 15px;
+		z-index: 0;
+	}
+
+	.header-title {
+		padding-bottom: 170px;
+		height: max-content;
+		position: relative;
+
+		.header-title__init {
+			h3 {
+				font-size: 2em;
+			}
+			h2 {
+				font-size: 3em;
+			}
+		}
+
+		h2,
+		h3,
+		h4 {
+			color: var(--bg1);
+		}
+
+		h2.sub {
+			font-size: 8em;
+			line-height: 1;
+			font-family: 'Lilita One', sans-serif;
+			text-shadow: 2px 2px 2px var(--tn1);
+		}
+
+		h4 {
+			margin-left: 30px;
+			padding-left: 10px;
+			border-left: 2px solid var(--bg2);
+			display: block;
+		}
+
+		h1.tit {
+			color: var(--tn1);
+			font-weight: 100;
+			font-size: 15em;
+			line-height: 1em;
+			text-shadow: 2px 2px 2px var(--bg1);
+		}
+	}
+}
+
+.phrase {
+	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		font-size: 5em;
+		text-align: center;
+		text-transform: uppercase;
+		color: var(--fnt2);
+
+		b {
+			color: var(--tn1);
+		}
+	}
+}
+
+.flavor {
+	width: 350px;
+	overflow: hidden;
+	height: max-content;
+	flex-direction: column;
+	display: flex;
+	border-radius: 10px;
+	padding-bottom: 15px;
+	background-color: var(--bg2);
+
+	&.middle {
+		width: 400px;
+
+		img {
+			height: 250px;
+		}
+	}
+
+	.flavor-description {
+		width: 100%;
+		padding: 10px;
+	}
+
+	img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+		transition: transform 0.3s ease;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.features {
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 100px;
+
+	video {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		filter: brightness(50%);
+		object-fit: cover;
+	}
+
+	.features-ownerMsg {
+		left: 100px;
+		bottom: 150px;
+		background-color: var(--bg2);
+		padding: 20px;
+		border-radius: 10px;
+		width: fit-content;
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		transition: all 0.3s ease;
+
+		position: absolute;
+
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 10px;
+		}
+
+		&:hover {
+			background-color: var(--bg1);
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+.contact {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg2);
+	padding: 200px 0;
+
+	.contact-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	iframe {
+		border-radius: 10px;
+		overflow: hidden;
+		outline: none;
+		border: none;
+	}
+}
+
+.card {
+	background-color: var(--bg1);
+	border-radius: 10px;
+	padding: 30px 20px;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+
+	.title {
+		text-align: center;
+	}
+
+	.form {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.group {
+		position: relative;
+
+		&.hover {
+			background-color: var(--tn2);
+		}
+	}
+
+	.form .group label {
+		font-size: 14px;
+		position: absolute;
+		top: -15px;
+		left: 10px;
+		transition: all 0.3s ease;
+	}
+
+	.form .group input,
+	.form .group textarea {
+		padding: 15px 10px;
+		border-radius: 5px;
+		border: 1px solid var(--bg3);
+		margin-bottom: 20px;
+		outline: 0;
+		width: 100%;
+		background-color: transparent;
+		transition: border-color 0.3s ease;
+
+		&:hover {
+			border-color: var(--tn1);
+		}
+	}
+
+	.form .group input:placeholder-shown + label,
+	.form .group textarea:placeholder-shown + label {
+		top: 10px;
+		background-color: transparent;
+	}
+
+	.form .group input:focus,
+	.form .group textarea:focus {
+		border-color: var(--tn1);
+	}
+
+	.form .group input:focus + label,
+	.form .group textarea:focus + label {
+		top: -10px;
+		left: 10px;
+		background-color: var(--bg2);
+		color: var(--tn1);
+		padding: 0 10px;
+	}
+
+	.form .group textarea {
+		resize: none;
+		height: 100px;
+	}
+
+	.form button {
+		text-transform: uppercase;
+		padding: 10px;
+		font-weight: 500;
+		font-size: 1.2em;
+		cursor: pointer;
+		color: var(--bg2);
+		border: none;
+		border-radius: 5px;
+		background-color: var(--tn1);
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: var(--tn3);
+		}
+	}
+}
+
+.header-title {
+	overflow: hidden;
+}
+
+.header-title h1.tit {
+	display: inline-block;
+	height: 210px;
+	white-space: nowrap;
+	border-right: 2px solid var(--tn1);
+	animation: blink-caret 0.75s step-end infinite;
+}
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: var(--tn1);
+	}
+}
