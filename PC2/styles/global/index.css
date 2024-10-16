@@ -20,10 +20,12 @@
 body {
 	font-family: 'Baloo Paaji 2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-optical-sizing: auto;
-	width: 100dvw;
 	position: relative;
 	min-height: 100dvh;
 	max-height: 100dvh;
+	max-width: 100vw;
+	min-width: 100vw;
+	width: 100vw;
 	line-height: var(--line-height);
 	height: 100dvh;
 	font-size: 14px;
@@ -152,6 +154,13 @@ i {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	img {
+		filter: brightness(0.6);
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			filter: brightness(0.9);
+		}
 	}
 }
 

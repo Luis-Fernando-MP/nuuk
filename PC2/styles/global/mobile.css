@@ -1,5 +1,8 @@
 @media (width < 646px) {
 	body {
+		aside.social {
+			display: none;
+		}
 		font-size: 10px !important;
 		h2.sub-title {
 			display: flex;

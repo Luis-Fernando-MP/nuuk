@@ -50,14 +50,23 @@ main.main.page-flavors {
 				justify-content: center;
 				gap: 10px;
 				width: 100%;
-				/* background-color: red; */
-				padding: 10px 0;
+				border-radius: 10px;
+				padding: 15px 0;
 				h4 {
 					min-width: 50%;
 					text-align: left;
+					font-size: 1.2em;
+				}
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					transform: scale(1.02);
+					background-color: var(--bg3);
 				}
 			}
 		}
+	}
+	.main-tab.flavors {
+		overflow-x: auto;
 	}
 }
 .main-content {
@@ -172,6 +181,10 @@ main.main.page-flavors {
 		border-radius: 5px;
 		padding: 15px 20px;
 		border: none;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			filter: brightness(140%);
+		}
 	}
 }
 

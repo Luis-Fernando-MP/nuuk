@@ -1,0 +1,22 @@
+@media (width < 646px) {
+	body {
+	}
+}
+
+@media (width <= 1090px) {
+	main.page-flavors .main-container {
+		flex-direction: column;
+		.main-navigator {
+			gap: 20px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+			min-width: 100%;
+			align-items: center;
+			justify-content: center;
+			.main-navigator__sticky {
+				max-width: 350px;
+			}
+		}
+	}
+}
