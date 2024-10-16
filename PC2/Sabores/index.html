@@ -14,7 +14,7 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../styles/global/index.css" />
-		<link rel="stylesheet" href="../styles/home.css" />
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -33,7 +33,7 @@
 					<i data-lucide="github"></i>
 				</a>
 			</header>
-			<nav class="nav">
+			<nav class="nav" aria-label="home nabar">
 				<div class="nav-links">
 					<a href="/PC2/" class="nav-link">
 						<i data-lucide="home"></i>
@@ -58,7 +58,235 @@
 				</a>
 			</nav>
 
-			<main class="main">
+			<main class="main page-flavors">
+				<div class="main-container">
+					<nav class="main-navigator" aria-label="navigator">
+						<section class="main-navigator__sticky audio">
+							<h4><b>Escucha</b> a nuestro <br /><b>experto</b> en helados 🎧</h4>
+							<div class="mb-8">
+								<audio controls loop>
+									<source src="../videos/audio.mp3" type="audio/mpeg" />
+									Tu navegador no soporta el elemento de audio.
+								</audio>
+							</div>
+						</section>
+
+						<section class="main-navigator__sticky links">
+							<a href="#sabores" class="tab-link"
+								><i data-lucide="ice-cream-bowl"></i>
+								<h4>Nuestros Sabores</h4></a
+							>
+							<a href="#pedido" class="tab-link"
+								><i data-lucide="shopping-cart"></i>
+								<h4>Hacer Pedido</h4></a
+							>
+							<a href="#destacados" class="tab-link"
+								><i data-lucide="sparkles"></i>
+								<h4>Destacados</h4></a
+							>
+						</section>
+					</nav>
+
+					<section class="main-content">
+						<div id="pedido" class="main-tab order">
+							<h2 class="sub-title">Realiza tus <b>Pedidos 📝</b> Únicos</h2>
+							<form class="order-form">
+								<div class="order-form__field">
+									<h4><label for="sabor">Sabor</label></h4>
+									<input id="sabor" required type="text" placeholder="Elige tu sabor favorito" />
+								</div>
+								<div class="order-form__field">
+									<h4><label for="cantidad">Cantidad</label></h4>
+									<input id="cantidad" required type="number" placeholder="¿Cuántos deseas?" />
+								</div>
+								<button type="submit" class="order-form__submit">Realizar Pedido</button>
+							</form>
+						</div>
+
+						<div id="sabores" class="main-tab flavors">
+							<h2 class="sub-title"><b>Sabores de Helado</b> Únicos</h2>
+							<h3>Experimenta la auténtica sabiduría de Perú en cada bocado</h3>
+							<table class="flavors-table">
+								<thead class="flavors-table__head">
+									<tr>
+										<th><h4>Imagen</h4></th>
+										<th><h4>Sabor</h4></th>
+										<th><h4>Precio</h4></th>
+										<th><h4>Descripción</h4></th>
+									</tr>
+								</thead>
+								<tbody class="flavors-body">
+									<tr>
+										<td><img src="../assets/flavors/table/1.jpg" alt="Lúcuma" /></td>
+										<td><h4>Lúcuma</h4></td>
+										<td>
+											<p><b>S/ 8.00</b></p>
+										</td>
+										<td><p>Fruta andina dulce y cremosa, con un sabor único y auténtico</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/2.jpg" alt="Maracuyá" /></td>
+										<td><h4>Maracuyá</h4></td>
+										<td>
+											<p><b>S/ 9.00</b></p>
+										</td>
+										<td><p>Exótica fruta tropical con un sabor agridulce intenso.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/3.jpg" alt="Chocolate Negro" /></td>
+										<td><h4>Chocolate Negro</h4></td>
+										<td>
+											<p><b>S/ 10.00</b></p>
+										</td>
+										<td><p>Intenso sabor a chocolate negro, con notas amargas y dulces.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/4.jpg" alt="Fresa" /></td>
+										<td><h4>Fresa</h4></td>
+										<td>
+											<p><b>S/ 8.50</b></p>
+										</td>
+										<td><p>Clásico sabor a fresa fresca y jugosa.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/5.jpg" alt="Mango" /></td>
+										<td><h4>Mango</h4></td>
+										<td>
+											<p><b>S/ 9.50</b></p>
+										</td>
+										<td><p>Dulce y refrescante sabor a mango tropical.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/6.jpg" alt="Coco" /></td>
+										<td><h4>Coco</h4></td>
+										<td>
+											<p><b>S/ 9.00</b></p>
+										</td>
+										<td><p>Delicioso sabor a coco cremoso y tropical.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/7.jpg" alt="Vainilla" /></td>
+										<td><h4>Vainilla</h4></td>
+										<td>
+											<p><b>S/ 8.00</b></p>
+										</td>
+										<td><p>Clásico sabor a vainilla, suave y cremoso.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/8.jpg" alt="Menta" /></td>
+										<td><h4>Menta</h4></td>
+										<td>
+											<p><b>S/ 8.50</b></p>
+										</td>
+										<td><p>Refrescante sabor a menta, ideal para el verano.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/9.jpg" alt="Piña" /></td>
+										<td><h4>Piña</h4></td>
+										<td>
+											<p><b>S/ 9.00</b></p>
+										</td>
+										<td><p>Agradablemente ácido y dulce sabor a piña fresca.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/10.jpg" alt="Durazno" /></td>
+										<td><h4>Durazno</h4></td>
+										<td>
+											<p><b>S/ 8.50</b></p>
+										</td>
+										<td><p>Suave y dulce sabor a durazno.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/11.jpg" alt="Arequipe" /></td>
+										<td><h4>Arequipe</h4></td>
+										<td>
+											<p><b>S/ 10.00</b></p>
+										</td>
+										<td><p>Cremoso sabor a arequipe, dulce de leche peruano.</p></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/12.jpg" alt="Lúcuma-Canela" /></td>
+										<td><h4>Lúcuma-Canela</h4></td>
+										<td>
+											<p><b>S/ 9.50</b></p>
+										</td>
+										<td>
+											<p>Combina la dulzura de la Lúcuma con el toque cálido de la canela.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/13.jpg" alt="Maracuya-Coco" /></td>
+										<td><h4>Maracuya-Coco</h4></td>
+										<td>
+											<p><b>S/ 10.00</b></p>
+										</td>
+										<td><p>Una mezcla tropical de Maracuya ácido y coco cremoso.</p></td>
+									</tr>
+									<tr>
+										<td>
+											<img src="../assets/flavors/table/14.jpg" alt="Chocolate Blanco-Fresa" />
+										</td>
+										<td><h4>Chocolate Blanco-Fresa</h4></td>
+										<td>
+											<p><b>S/ 9.50</b></p>
+										</td>
+										<td>
+											<p>Delicioso contraste entre el chocolate blanco suave y la fresa fresca.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../assets/flavors/table/15.jpg" alt="Chicha Morada" /></td>
+										<td><h4>Chicha Morada</h4></td>
+										<td>
+											<p><b>S/ 9.00</b></p>
+										</td>
+										<td><p>Refrescante sabor a chicha morada, bebida tradicional peruana.</p></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<section id="destacados" class="flavors simple-grid">
+							<h2 class="sub-title">Nuestros Sabores <b>Más Destacados</b></h2>
+							<ul class="simple-grid-list">
+								<li class="flavor">
+									<img src="../assets/flavors/table/1.jpg" alt="flavor 1" />
+									<div class="flavor-description">
+										<h3>Helado de Lúcuma</h3>
+										<p>
+											A <b>S/ 8.00</b> es un helado de, fruta andina dulce y cremosa, con un sabor
+											único y auténtico
+										</p>
+									</div>
+								</li>
+								<li class="flavor">
+									<img src="../assets/flavors/table/2.jpg" alt="flavor 1" />
+									<div class="flavor-description">
+										<h3>Chocolate Blanco-Fresa</h3>
+										<p>
+											A <b>S/ 9.50</b> Es un helado Refrescante sabor a chicha morada, bebida
+											tradicional peruana.
+										</p>
+									</div>
+								</li>
+								<li class="flavor">
+									<img src="../assets/flavors/table/3.jpg" alt="flavor 1" />
+									<div class="flavor-description">
+										<h3>Pistacho Cremoso</h3>
+										<p>A <b>S/ 8.50</b> Es un helado de Pistachos tostados en crema suave</p>
+									</div>
+								</li>
+								<li class="flavor">
+									<img src="../assets/flavors/table/9.jpg" alt="flavor 1" />
+									<div class="flavor-description">
+										<h3>Helado de Piña</h3>
+										<p>A <b>S/ 9.00</b> Es un Agradablemente ácido y dulce sabor a piña fresca.</p>
+									</div>
+								</li>
+							</ul>
+						</section>
+					</section>
+				</div>
 				<footer class="footer">
 					<header class="footer-contact">
 						<h2>Heladería NUUK</h2>

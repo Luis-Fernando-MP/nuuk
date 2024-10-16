@@ -47,7 +47,7 @@ main.main.page-events {
 
 .events {
 	width: 100%;
-	min-height: 70vh;
+	height: max-content;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -55,6 +55,7 @@ main.main.page-events {
 	align-items: center;
 	gap: 20px;
 	background-color: var(--tn2);
+	padding: 15px 0;
 
 	.event {
 		background-color: var(--bg2);
