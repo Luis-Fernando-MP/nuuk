@@ -41,6 +41,7 @@
 			font-size: 3em;
 		}
 		.features-ownerMsg {
+			width: 90% !important;
 			left: 50% !important;
 			bottom: 100px !important;
 			transform: translateX(-50%);
