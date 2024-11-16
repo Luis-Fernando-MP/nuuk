@@ -36,24 +36,24 @@
 			</header>
 			<nav class="nav" aria-label="home nabar">
 				<div class="nav-links">
-					<a href="/web1/" class="nav-link">
+					<a href="/" class="nav-link">
 						<i data-lucide="home"></i>
 					</a>
-					<a href="/web1/Sabores/" class="nav-link active">
+					<a href="/Sabores/" class="nav-link active">
 						<i data-lucide="ice-cream-bowl"></i>
 					</a>
-					<a href="/web1/Galería/" class="nav-link">
+					<a href="/Galería/" class="nav-link">
 						<i data-lucide="image"></i>
 					</a>
-					<a href="/web1/Eventos/" class="nav-link">
+					<a href="/Eventos/" class="nav-link">
 						<i data-lucide="calendar"></i>
 					</a>
-					<a href="/web1/Contacto/" class="nav-link">
-						<i data-lucide="handshake"></i>
+					<a href="/Proceso/" class="nav-link">
+						<i data-lucide="leaf"></i>
 					</a>
 				</div>
 
-				<a href="/web1/" class="nav-logo">
+				<a href="/" class="nav-logo">
 					<i data-lucide="cup-soda"></i>
 					<h2>NUUK</h2>
 				</a>
@@ -91,14 +91,23 @@
 					<section class="main-content">
 						<div id="pedido" class="main-tab order">
 							<h2 class="sub-title">Realiza tus <b>Pedidos 📝</b> Únicos</h2>
-							<form class="order-form">
+							<form
+								class="order-form"
+								action="mailto:nuuk@gmail.com"
+								method="post"
+								enctype="text/plain"
+							>
 								<div class="order-form__field">
-									<h4><label for="sabor">Sabor</label></h4>
-									<input id="sabor" required type="text" placeholder="Elige tu sabor favorito" />
+									<h4><label for="email">Correo</label></h4>
+									<input id="email" required type="email" placeholder="JohnDoe@mail.com" />
 								</div>
 								<div class="order-form__field">
 									<h4><label for="cantidad">Cantidad</label></h4>
 									<input id="cantidad" required type="number" placeholder="¿Cuántos deseas?" />
+								</div>
+								<div class="order-form__field">
+									<h4><label for="flavor">Sabor</label></h4>
+									<input id="flavor" required type="text" placeholder="Elige tu sabor favorito" />
 								</div>
 								<button type="submit" class="order-form__submit">Realizar Pedido</button>
 							</form>
@@ -116,133 +125,8 @@
 										<th><h4>Descripción</h4></th>
 									</tr>
 								</thead>
-								<tbody class="flavors-body">
-									<tr>
-										<td><img src="../assets/flavors/table/1.jpg" alt="Lúcuma" /></td>
-										<td><h4>Lúcuma</h4></td>
-										<td>
-											<p><b>S/ 8.00</b></p>
-										</td>
-										<td><p>Fruta andina dulce y cremosa, con un sabor único y auténtico</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/2.jpg" alt="Maracuyá" /></td>
-										<td><h4>Maracuyá</h4></td>
-										<td>
-											<p><b>S/ 9.00</b></p>
-										</td>
-										<td><p>Exótica fruta tropical con un sabor agridulce intenso.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/3.jpg" alt="Chocolate Negro" /></td>
-										<td><h4>Chocolate Negro</h4></td>
-										<td>
-											<p><b>S/ 10.00</b></p>
-										</td>
-										<td><p>Intenso sabor a chocolate negro, con notas amargas y dulces.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/4.jpg" alt="Fresa" /></td>
-										<td><h4>Fresa</h4></td>
-										<td>
-											<p><b>S/ 8.50</b></p>
-										</td>
-										<td><p>Clásico sabor a fresa fresca y jugosa.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/5.jpg" alt="Mango" /></td>
-										<td><h4>Mango</h4></td>
-										<td>
-											<p><b>S/ 9.50</b></p>
-										</td>
-										<td><p>Dulce y refrescante sabor a mango tropical.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/6.jpg" alt="Coco" /></td>
-										<td><h4>Coco</h4></td>
-										<td>
-											<p><b>S/ 9.00</b></p>
-										</td>
-										<td><p>Delicioso sabor a coco cremoso y tropical.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/7.jpg" alt="Vainilla" /></td>
-										<td><h4>Vainilla</h4></td>
-										<td>
-											<p><b>S/ 8.00</b></p>
-										</td>
-										<td><p>Clásico sabor a vainilla, suave y cremoso.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/8.jpg" alt="Menta" /></td>
-										<td><h4>Menta</h4></td>
-										<td>
-											<p><b>S/ 8.50</b></p>
-										</td>
-										<td><p>Refrescante sabor a menta, ideal para el verano.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/9.jpg" alt="Piña" /></td>
-										<td><h4>Piña</h4></td>
-										<td>
-											<p><b>S/ 9.00</b></p>
-										</td>
-										<td><p>Agradablemente ácido y dulce sabor a piña fresca.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/10.jpg" alt="Durazno" /></td>
-										<td><h4>Durazno</h4></td>
-										<td>
-											<p><b>S/ 8.50</b></p>
-										</td>
-										<td><p>Suave y dulce sabor a durazno.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/11.jpg" alt="Arequipe" /></td>
-										<td><h4>Arequipe</h4></td>
-										<td>
-											<p><b>S/ 10.00</b></p>
-										</td>
-										<td><p>Cremoso sabor a arequipe, dulce de leche peruano.</p></td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/12.jpg" alt="Lúcuma-Canela" /></td>
-										<td><h4>Lúcuma-Canela</h4></td>
-										<td>
-											<p><b>S/ 9.50</b></p>
-										</td>
-										<td>
-											<p>Combina la dulzura de la Lúcuma con el toque cálido de la canela.</p>
-										</td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/13.jpg" alt="Maracuya-Coco" /></td>
-										<td><h4>Maracuya-Coco</h4></td>
-										<td>
-											<p><b>S/ 10.00</b></p>
-										</td>
-										<td><p>Una mezcla tropical de Maracuya ácido y coco cremoso.</p></td>
-									</tr>
-									<tr>
-										<td>
-											<img src="../assets/flavors/table/14.jpg" alt="Chocolate Blanco-Fresa" />
-										</td>
-										<td><h4>Chocolate Blanco-Fresa</h4></td>
-										<td>
-											<p><b>S/ 9.50</b></p>
-										</td>
-										<td>
-											<p>Delicioso contraste entre el chocolate blanco suave y la fresa fresca.</p>
-										</td>
-									</tr>
-									<tr>
-										<td><img src="../assets/flavors/table/15.jpg" alt="Chicha Morada" /></td>
-										<td><h4>Chicha Morada</h4></td>
-										<td>
-											<p><b>S/ 9.00</b></p>
-										</td>
-										<td><p>Refrescante sabor a chicha morada, bebida tradicional peruana.</p></td>
-									</tr>
+								<tbody id="flavors-body" class="flavors-body">
+									<!-- Aquí se insertarán los datos -->
 								</tbody>
 							</table>
 						</div>
@@ -353,10 +237,15 @@
 				</div>
 			</aside>
 		</div>
-
+		<div id="modal">
+			<div class="modal-container">
+				<button id="modal-close">
+					<i data-lucide="x"></i>
+				</button>
+				<img src="./" class="fade" id="modal-image" alt="modal image" />
+			</div>
+		</div>
 		<script src="https://unpkg.com/lucide@latest"></script>
-		<script defer>
-			lucide.createIcons()
-		</script>
+		<script defer src="./script.js"></script>
 	</body>
 </html>

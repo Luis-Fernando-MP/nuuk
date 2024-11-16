@@ -1,0 +1,92 @@
+[
+	{
+		"imagen": "../assets/flavors/table/1.jpg",
+		"sabor": "Lúcuma",
+		"precio": "S/ 8.00",
+		"descripcion": "Fruta andina dulce y cremosa, con un sabor único y auténtico"
+	},
+	{
+		"imagen": "../assets/flavors/table/2.jpg",
+		"sabor": "Maracuyá",
+		"precio": "S/ 9.00",
+		"descripcion": "Exótica fruta tropical con un sabor agridulce intenso."
+	},
+	{
+		"imagen": "../assets/flavors/table/3.jpg",
+		"sabor": "Chocolate Negro",
+		"precio": "S/ 10.00",
+		"descripcion": "Intenso sabor a chocolate negro, con notas amargas y dulces."
+	},
+	{
+		"imagen": "../assets/flavors/table/4.jpg",
+		"sabor": "Fresa",
+		"precio": "S/ 8.50",
+		"descripcion": "Clásico sabor a fresa fresca y jugosa."
+	},
+	{
+		"imagen": "../assets/flavors/table/5.jpg",
+		"sabor": "Mango",
+		"precio": "S/ 9.50",
+		"descripcion": "Dulce y refrescante sabor a mango tropical."
+	},
+	{
+		"imagen": "../assets/flavors/table/6.jpg",
+		"sabor": "Coco",
+		"precio": "S/ 9.00",
+		"descripcion": "Delicioso sabor a coco cremoso y tropical."
+	},
+	{
+		"imagen": "../assets/flavors/table/7.jpg",
+		"sabor": "Vainilla",
+		"precio": "S/ 8.00",
+		"descripcion": "Clásico sabor a vainilla, suave y cremoso."
+	},
+	{
+		"imagen": "../assets/flavors/table/8.jpg",
+		"sabor": "Menta",
+		"precio": "S/ 8.50",
+		"descripcion": "Refrescante sabor a menta, ideal para el verano."
+	},
+	{
+		"imagen": "../assets/flavors/table/9.jpg",
+		"sabor": "Piña",
+		"precio": "S/ 9.00",
+		"descripcion": "Agradablemente ácido y dulce sabor a piña fresca."
+	},
+	{
+		"imagen": "../assets/flavors/table/10.jpg",
+		"sabor": "Durazno",
+		"precio": "S/ 8.50",
+		"descripcion": "Suave y dulce sabor a durazno."
+	},
+	{
+		"imagen": "../assets/flavors/table/11.jpg",
+		"sabor": "Arequipe",
+		"precio": "S/ 10.00",
+		"descripcion": "Cremoso sabor a arequipe, dulce de leche peruano."
+	},
+	{
+		"imagen": "../assets/flavors/table/12.jpg",
+		"sabor": "Lúcuma-Canela",
+		"precio": "S/ 9.50",
+		"descripcion": "Combina la dulzura de la Lúcuma con el toque cálido de la canela."
+	},
+	{
+		"imagen": "../assets/flavors/table/13.jpg",
+		"sabor": "Maracuya-Coco",
+		"precio": "S/ 10.00",
+		"descripcion": "Una mezcla tropical de Maracuya ácido y coco cremoso."
+	},
+	{
+		"imagen": "../assets/flavors/table/14.jpg",
+		"sabor": "Chocolate Blanco-Fresa",
+		"precio": "S/ 9.50",
+		"descripcion": "Delicioso contraste entre el chocolate blanco suave y la fresa fresca."
+	},
+	{
+		"imagen": "../assets/flavors/table/15.jpg",
+		"sabor": "Chicha Morada",
+		"precio": "S/ 9.00",
+		"descripcion": "Refrescante sabor a chicha morada, bebida tradicional peruana."
+	}
+]

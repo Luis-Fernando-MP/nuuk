@@ -6,6 +6,7 @@
 @import url('./mobile.css');
 @import url('./structure.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 *,
 *::before,
@@ -31,6 +32,7 @@ body {
 	font-size: 14px;
 	flex-direction: column;
 	display: flex;
+	text-wrap: balance;
 	color: var(--fnt1);
 	background-color: var(--bg2);
 	overflow-y: scroll;
@@ -67,6 +69,9 @@ p {
 }
 span {
 	font-size: var(--span);
+}
+img {
+	cursor: pointer;
 }
 
 h1,

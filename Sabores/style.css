@@ -1,6 +1,7 @@
 main.main.page-flavors {
 	gap: 20px;
 }
+
 .main-container {
 	display: flex;
 	gap: 20px;
@@ -16,6 +17,7 @@ main.main.page-flavors {
 		display: flex;
 		flex-direction: column;
 		gap: 100px;
+
 		.main-navigator__sticky {
 			width: 100%;
 			top: 0;
@@ -31,19 +33,24 @@ main.main.page-flavors {
 			display: flex;
 			align-items: center;
 			border-radius: 10px;
+
 			h4 {
 				font-weight: 400;
+
 				b {
 					font-weight: bolder;
 				}
 			}
+
 			&.audio {
 				background-color: var(--bg3);
 			}
+
 			&.links {
 				background-color: var(--bg1);
 				border: 2px solid var(--bg3);
 			}
+
 			.tab-link {
 				display: flex;
 				align-items: center;
@@ -52,12 +59,15 @@ main.main.page-flavors {
 				width: 100%;
 				border-radius: 10px;
 				padding: 15px 0;
+
 				h4 {
 					min-width: 50%;
 					text-align: left;
 					font-size: 1.2em;
 				}
+
 				transition: all 0.2s ease-in-out;
+
 				&:hover {
 					transform: scale(1.02);
 					background-color: var(--bg3);
@@ -65,10 +75,12 @@ main.main.page-flavors {
 			}
 		}
 	}
+
 	.main-tab.flavors {
 		overflow-x: auto;
 	}
 }
+
 .main-content {
 	display: flex;
 	flex-direction: column;
@@ -76,13 +88,16 @@ main.main.page-flavors {
 	width: 100%;
 
 	height: max-content;
+
 	h2.sub-title {
 		margin: 0;
 	}
+
 	h3 {
 		text-align: center;
 	}
 }
+
 .flavors-table {
 	margin-top: 50px;
 	width: 100%;
@@ -95,14 +110,17 @@ main.main.page-flavors {
 	.flavors-table__head {
 		background-color: var(--fnt1);
 		padding: 10px;
+
 		th {
 			h4 {
 				color: var(--bg1);
 				font-weight: bold;
 			}
+
 			padding: 15px;
 		}
 	}
+
 	.flavors-table__head th {
 		padding: 12px;
 		text-align: left;
@@ -113,19 +131,24 @@ main.main.page-flavors {
 		td {
 			padding: 15px 10px;
 		}
+
 		tr {
 			&:not(:last-child) {
 				border-bottom: 2px solid var(--bg3);
 			}
+
 			&:nth-child(even) {
 				background-color: var(--bg1);
 			}
 		}
-		tr:hover {
+
+		tr:hover,
+		tr.active {
 			background-color: var(--tn1);
 			transform: translateY(-2px);
 			box-shadow: 0 4px 8px var(--bg3);
 			transition: all 0.2s ease;
+
 			h4,
 			p {
 				color: var(--bg1);
@@ -144,6 +167,7 @@ main.main.page-flavors {
 	gap: 20px;
 	padding: 15px 0;
 	background-color: var(--bg2);
+
 	&,
 	.order-form {
 		flex-direction: column;
@@ -151,6 +175,7 @@ main.main.page-flavors {
 		display: flex;
 		align-items: center;
 	}
+
 	.order-form {
 		gap: 15px;
 		width: max-content;
@@ -160,11 +185,13 @@ main.main.page-flavors {
 		padding: 20px 25px;
 		background-color: var(--bg2);
 	}
+
 	.order-form__field {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+
 		input {
 			background-color: var(--bg1);
 			width: 300px;
@@ -173,6 +200,7 @@ main.main.page-flavors {
 			border: none;
 		}
 	}
+
 	button {
 		background-color: var(--tn1);
 		color: var(--bg1);
@@ -182,6 +210,7 @@ main.main.page-flavors {
 		padding: 15px 20px;
 		border: none;
 		transition: all 0.3s ease-in-out;
+
 		&:hover {
 			filter: brightness(140%);
 		}

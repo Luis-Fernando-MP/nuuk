@@ -36,24 +36,24 @@
 			</header>
 			<nav class="nav">
 				<div class="nav-links">
-					<a href="/web1/" class="nav-link">
+					<a href="/" class="nav-link">
 						<i data-lucide="home"></i>
 					</a>
-					<a href="/web1/Sabores/" class="nav-link">
+					<a href="/Sabores/" class="nav-link">
 						<i data-lucide="ice-cream-bowl"></i>
 					</a>
-					<a href="/web1/Galería/" class="nav-link">
+					<a href="/Galería/" class="nav-link">
 						<i data-lucide="image"></i>
 					</a>
-					<a href="/web1/Eventos/" class="nav-link active">
+					<a href="/Eventos/" class="nav-link active">
 						<i data-lucide="calendar"></i>
 					</a>
-					<a href="/web1/Contacto/" class="nav-link">
-						<i data-lucide="handshake"></i>
+					<a href="/Proceso/" class="nav-link">
+						<i data-lucide="leaf"></i>
 					</a>
 				</div>
 
-				<a href="/web1/" class="nav-logo">
+				<a href="/" class="nav-logo">
 					<i data-lucide="cup-soda"></i>
 					<h2>NUUK</h2>
 				</a>
@@ -125,7 +125,7 @@
 								alguien especial, sabemos que después de un par de sorpresas dulces, querrás volver
 								por más
 							</p>
-							<button>Reservar ahora</button>
+							<button id="pr-conf">Reservar ahora</button>
 						</article>
 
 						<article class="nEvents-card">
@@ -157,7 +157,7 @@
 								algo más que solo un antojo.
 								<b>¿Quién dice que no puede ser el comienzo de una dulce adicción?</b>
 							</p>
-							<button>Reservar ahora</button>
+							<button id="pr-conf">Reservar ahora</button>
 						</article>
 					</div>
 				</section>
@@ -250,10 +250,17 @@
 				</div>
 			</aside>
 		</div>
-
+		<div id="modal">
+			<div class="modal-container">
+				<button id="modal-close">
+					<i data-lucide="x"></i>
+				</button>
+				<img src="./" class="fade" id="modal-image" alt="modal image" />
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest"></script>
-		<script defer>
-			lucide.createIcons()
-		</script>
+		<script defer src="../scripts/modal.js"></script>
+		<script defer src="./script.js"></script>
 	</body>
 </html>

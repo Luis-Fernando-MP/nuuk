@@ -16,10 +16,10 @@
 	--h3: 1.4em;
 	--h4: 1.2em;
 	--h5: 1.1em;
-	--p: 1em;
+	--p: 0.8em;
 	--span: 0.95em;
 
-	--line-height: 1.6;
+	--line-height: normal;
 }
 
 .xl {

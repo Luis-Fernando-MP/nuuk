@@ -16,6 +16,12 @@
 		<link rel="stylesheet" href="./styles/global/index.css" />
 		<link rel="stylesheet" href="./styles/mobile.css" />
 		<link rel="stylesheet" href="./styles/home.css" />
+
+		<script src=" https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js "></script>
+		<link
+			href=" https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css "
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
@@ -36,24 +42,24 @@
 			</header>
 			<nav class="nav">
 				<div class="nav-links">
-					<a href="/web1/" class="nav-link active">
+					<a href="/" class="nav-link active">
 						<i data-lucide="home"></i>
 					</a>
-					<a href="/web1/Sabores/" class="nav-link">
+					<a href="/Sabores/" class="nav-link">
 						<i data-lucide="ice-cream-bowl"></i>
 					</a>
-					<a href="/web1/Galería/" class="nav-link">
+					<a href="/Galería/" class="nav-link">
 						<i data-lucide="image"></i>
 					</a>
-					<a href="/web1/Eventos/" class="nav-link">
+					<a href="/Eventos/" class="nav-link">
 						<i data-lucide="calendar"></i>
 					</a>
-					<a href="/web1/Contacto/" class="nav-link">
-						<i data-lucide="handshake"></i>
+					<a href="/Proceso/" class="nav-link">
+						<i data-lucide="leaf"></i>
 					</a>
 				</div>
 
-				<a href="/web1/" class="nav-logo">
+				<a href="/" class="nav-logo">
 					<i data-lucide="cup-soda"></i>
 					<h2>NUUK</h2>
 				</a>
@@ -74,6 +80,29 @@
 							<u>"los mas cotizados en todo Lima."</u>
 						</h4>
 					</section>
+					<div class="shape">
+						<svg
+							data-name="Layer 1"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 1200 120"
+							preserveAspectRatio="none"
+						>
+							<path
+								d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+								opacity=".25"
+								class="shape-fill"
+							></path>
+							<path
+								d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+								opacity=".5"
+								class="shape-fill"
+							></path>
+							<path
+								d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+								class="shape-fill"
+							></path>
+						</svg>
+					</div>
 				</header>
 
 				<section class="phrase">
@@ -156,7 +185,7 @@
 					<article class="contact-container">
 						<div class="card">
 							<h4 class="title">Redacta tu <b>Mensaje</b></h4>
-							<form class="form">
+							<form class="form" action="mailto:nuuk@gmail.com" method="post" enctype="text/plain">
 								<div class="group">
 									<input placeholder="‎" type="text" required="" />
 									<label for="name">Name</label>
@@ -235,72 +264,35 @@
 			<aside class="social">
 				<div class="social-container">
 					<div class="social-slider">
-						<a href="/web1/Sabores/">
+						<a href="/Sabores/">
 							<img src="./assets/social/1.jpg" alt="social-1" />
 						</a>
-						<a href="/web1/Sabores/">
+						<a href="/Sabores/">
 							<img src="./assets/social/2.jpg" alt="social-2" />
 						</a>
-						<a href="/web1/Sabores/">
+						<a href="/Sabores/">
 							<img src="./assets/social/3.jpg" alt="social-3" />
 						</a>
-						<a href="/web1/Sabores/">
+						<a href="/Sabores/">
 							<img src="./assets/social/4.jpg" alt="social-4" />
 						</a>
-						<a href="/web1/Sabores/">
+						<a href="/Sabores/">
 							<img src="./assets/social/5.jpg" alt="social-5" />
 						</a>
 					</div>
 				</div>
 			</aside>
 		</div>
-
+		<div id="modal">
+			<div class="modal-container">
+				<button id="modal-close">
+					<i data-lucide="x"></i>
+				</button>
+				<img src="./" class="fade" id="modal-image" alt="modal image" />
+			</div>
+		</div>
 		<script src="https://unpkg.com/lucide@latest"></script>
-		<script defer>
-			lucide.createIcons()
-			document.addEventListener('DOMContentLoaded', function () {
-				const texts = [
-					'NUUK',
-					'LIMA',
-					'PERÚ',
-					'CAFE',
-					'POSTRE',
-					'FOOD',
-					'FRÍO',
-					'ICE',
-					'SABOR',
-					'DULCE',
-					'VERANO',
-					'COOL',
-					'FRESH',
-					'RICO'
-				]
-
-				const titleElement = document.querySelector('h1.tit')
-				let textIndex = 0
-				let charIndex = 0
-
-				function type() {
-					if (charIndex < texts[textIndex].length) {
-						titleElement.textContent += texts[textIndex].charAt(charIndex)
-						charIndex++
-						return setTimeout(type, 100)
-					}
-					setTimeout(erase, 1000)
-				}
-
-				function erase() {
-					if (charIndex > 0) {
-						titleElement.textContent = titleElement.textContent.slice(0, -1)
-						charIndex--
-						return setTimeout(erase, 100)
-					}
-					textIndex = (textIndex + 1) % texts.length
-					setTimeout(type, 500)
-				}
-
-				type()
-			})
-		</script>
+		<script defer src="../scripts/modal.js"></script>
+		<script defer src="./script.js"></script>
 	</body>
 </html>
