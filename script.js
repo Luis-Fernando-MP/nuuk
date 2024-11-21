@@ -40,3 +40,13 @@ function erase() {
 }
 
 type()
+
+document.querySelector('button#form-submit')?.addEventListener('click', () => {
+	alert('En breve te contactaremos')
+	confetti({
+		angle: randomInRange(55, 125),
+		spread: randomInRange(50, 70),
+		particleCount: randomInRange(50, 100),
+		origin: { y: 0.6 }
+	})
+})

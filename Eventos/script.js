@@ -9,9 +9,14 @@ conf.forEach((e) =>
 			particleCount: randomInRange(50, 100),
 			origin: { y: 0.6 }
 		})
+		alert('Genial!! 🍀 ya te contactaremos')
 	})
 )
 
 function randomInRange(min, max) {
 	return Math.random() * (max - min) + min
 }
+
+document.querySelector('button#form-submit')?.addEventListener('click', () => {
+	console.log('cli')
+})
