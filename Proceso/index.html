@@ -61,13 +61,13 @@
 			</nav>
 
 			<main class="main process">
-				<div class="process-bg">
+				<div class="process-bg fade">
 					<div></div>
 					<h2>Adictos al Helado</h2>
 				</div>
 
-				<h2 class="sub-title">Proceso de <b>Elaboración</b></h2>
-				<section class="process-flex">
+				<h2 class="sub-title fade">Proceso de <b>Elaboración</b></h2>
+				<section class="process-flex fade">
 					<div class="process-item">
 						<i data-lucide="tractor"></i>
 						<h3>Ingredientes Naturales</h3>
@@ -95,8 +95,8 @@
 					</div>
 				</section>
 
-				<h2 class="sub-title">Lo que dicen  <b>nuestros clientes</b></h2>
-				<section class="process-flex">
+				<h2 class="sub-title fade">Lo que dicen  <b>nuestros clientes</b></h2>
+				<section class="process-flex fade">
 					<div class="process-item">
 						<img src="https://pbs.twimg.com/profile_images/1365529742049353730/chFwjWLz_400x400.jpg" alt="María García" />
 						<h3>María García</h3>
@@ -135,7 +135,7 @@
 					</div>
 				</section>
 
-				<section id="destacados" class="flavors simple-grid">
+				<section id="destacados" class="flavors simple-grid fade">
 					<h2 class="sub-title">Nuestros Sabores <b>Más Destacados</b></h2>
 					<ul class="simple-grid-list">
 						<li class="flavor">
@@ -239,16 +239,16 @@
 				</div>
 			</aside>
 		</div>
-		<div id="modal">
+		<article id="modal">
 			<div class="modal-container">
 				<button id="modal-close">
 					<i data-lucide="x"></i>
 				</button>
-				<img src="./" class="fade" id="modal-image" alt="modal image" />
+				<section id="modal-container"></section>
 			</div>
-		</div>
-		<script src="https://unpkg.com/lucide@latest"></script>
+		</article>
 		<script defer src="../scripts/modal.js"></script>
+		<script src="https://unpkg.com/lucide@latest"></script>
 		<script defer>
 			lucide.createIcons()
 		</script>

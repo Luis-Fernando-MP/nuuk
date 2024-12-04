@@ -1,10 +1,8 @@
 lucide.createIcons()
-
-const modal = document.querySelector('div#modal')
-const modalImg = modal.querySelector('img#modal-image')
+let data = null
 
 ;(async () => {
-	const data = await loadData()
+	data = await loadData()
 	drawInTable(data)
 
 	const flavorInput = document.querySelector('#flavor')
@@ -16,15 +14,36 @@ const modalImg = modal.querySelector('img#modal-image')
 
 function createRow(flavor, index) {
 	const row = document.createElement('tr')
-	row.style.animation = `fadeInUp 0.5s ease `
 	row.style.animationDelay = `${index * 0.2}s`
 	row.innerHTML = `
         <td><img src="${flavor.imagen}" alt="${flavor.sabor}" /></td>
         <td><h4>${flavor.sabor}</h4></td>
         <td><p><b>${flavor.precio}</b></p></td>
-        <td><p>${flavor.descripcion}</p></td>`
-	row.addEventListener('click', () => selectFlavor(flavor, row))
+        <td><p>${flavor.descripcion}</p></td>
+				<td><button id="table-select" data-flavor="${flavor.sabor}">Descripción</button></td>`
+	row.addEventListener('click', (e) => {
+		const descriptionButton = e.target.closest('#table-select')
+		if (descriptionButton) {
+			const flavor = descriptionButton.getAttribute('data-flavor')
+			return openModalFlavor(flavor)
+		}
+		selectFlavor(flavor, row)
+	})
 	return row
+}
+
+function openModalFlavor(flavorName) {
+	const search = flavorName.trim().toLowerCase()
+	const flavor = data.find((d) => d.sabor.toLowerCase() == search)
+	console.log(flavor)
+
+	const html = `<div class="modal-box fade" id="modal-box">
+		<h2 class="sub-title">Helados de <b>${flavor.sabor}</b></h2>
+		<img src="${flavor.imagen}" alt="${flavor.sabor}" />
+		<h3>A solo <b>${flavor.precio}</b></h3>
+		<p>${flavor.descripcion}</p>
+	</div>`
+	openModal(html)
 }
 
 function selectFlavor(flavor, row) {
@@ -32,6 +51,12 @@ function selectFlavor(flavor, row) {
 	flavorInput.value = flavor.sabor
 	clearActiveRows()
 	row.classList.add('active')
+	toastr.success(`Escogiste: ${flavor.sabor}`, '', {
+		timeOut: 1500,
+		positionClass: 'toast-top-center',
+		preventDuplicates: true,
+		progressBar: true
+	})
 }
 
 function clearActiveRows() {
@@ -70,42 +95,4 @@ function filterFlavors(e, data) {
 		(d) => d.sabor.toLowerCase().includes(search) || d.descripcion.toLowerCase().includes(search)
 	)
 	drawInTable(newData)
-}
-
-function loadImageEvents() {
-	const images = document.querySelectorAll('img')
-	const closeButton = modal.querySelector('button#modal-close')
-
-	images.forEach((img) => {
-		img.removeEventListener('click', setModal)
-		img.addEventListener('click', setModal)
-	})
-
-	closeButton.removeEventListener('click', closeModal)
-	closeButton.addEventListener('click', closeModal)
-
-	modal.removeEventListener('click', handleModalBackgroundClick)
-	modal.addEventListener('click', handleModalBackgroundClick)
-}
-
-function setModal(e) {
-	if (!modal || !modalImg) return
-	const newScrImage = e.target.src
-	if (newScrImage === modalImg.src) return
-	modal.classList.add('active')
-	modalImg.src = newScrImage
-}
-
-function closeModal() {
-	if (!modal || !modalImg) return
-	modal.classList.remove('active')
-	modalImg.classList.add('removing')
-	setTimeout(() => {
-		modalImg.src = '.'
-		modalImg.classList.remove('removing')
-	}, 200)
-}
-
-function handleModalBackgroundClick(e) {
-	if (e.target === modal) closeModal()
 }

@@ -16,6 +16,10 @@
 		<link rel="stylesheet" href="../styles/global/index.css" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./mobile.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+		/>
 	</head>
 	<body>
 		<div class="container">
@@ -123,6 +127,7 @@
 										<th><h4>Sabor</h4></th>
 										<th><h4>Precio</h4></th>
 										<th><h4>Descripción</h4></th>
+										<th><h4>Opciones</h4></th>
 									</tr>
 								</thead>
 								<tbody id="flavors-body" class="flavors-body">
@@ -218,34 +223,37 @@
 			<aside class="social">
 				<div class="social-container">
 					<div class="social-slider">
-						<a href="/nuuk/Sabores/">
+						<a href="./Sabores/">
 							<img src="../assets/social/1.jpg" alt="social-1" />
 						</a>
-						<a href="/nuuk/Sabores/">
+						<a href="./Sabores/">
 							<img src="../assets/social/2.jpg" alt="social-2" />
 						</a>
-						<a href="/nuuk/Sabores/">
+						<a href="./Sabores/">
 							<img src="../assets/social/3.jpg" alt="social-3" />
 						</a>
-						<a href="/nuuk/Sabores/">
+						<a href="./Sabores/">
 							<img src="../assets/social/4.jpg" alt="social-4" />
 						</a>
-						<a href="/nuuk/Sabores/">
+						<a href="./Sabores/">
 							<img src="../assets/social/5.jpg" alt="social-5" />
 						</a>
 					</div>
 				</div>
 			</aside>
 		</div>
-		<div id="modal">
+		<article id="modal">
 			<div class="modal-container">
 				<button id="modal-close">
 					<i data-lucide="x"></i>
 				</button>
-				<img src="./" class="fade" id="modal-image" alt="modal image" />
+				<section id="modal-container"></section>
 			</div>
-		</div>
+		</article>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest"></script>
-		<script defer src="./script.js"></script>
+		<script defer src="../scripts/modal.js"></script>
+		<script type="module" defer src="./script.js"></script>
 	</body>
 </html>

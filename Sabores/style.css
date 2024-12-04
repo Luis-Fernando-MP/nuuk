@@ -130,6 +130,12 @@ main.main.page-flavors {
 	.flavors-body {
 		td {
 			padding: 15px 10px;
+			button {
+				padding: 10px;
+				border-radius: 5px;
+				background-color: var(--tn1);
+				color: var(--bg1);
+			}
 		}
 
 		tr {
