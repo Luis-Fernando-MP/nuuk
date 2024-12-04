@@ -35,8 +35,6 @@ function createRow(flavor, index) {
 function openModalFlavor(flavorName) {
 	const search = flavorName.trim().toLowerCase()
 	const flavor = data.find((d) => d.sabor.toLowerCase() == search)
-	console.log(flavor)
-
 	const html = `<div class="modal-box fade" id="modal-box">
 		<h2 class="sub-title">Helados de <b>${flavor.sabor}</b></h2>
 		<img src="${flavor.imagen}" alt="${flavor.sabor}" />
@@ -80,6 +78,15 @@ function drawInTable(data) {
 		tableBody.appendChild(row)
 	})
 	loadImageEvents()
+}
+
+function onSubmit() {
+	confetti({
+		angle: randomInRange(55, 125),
+		spread: randomInRange(50, 70),
+		particleCount: randomInRange(50, 100),
+		origin: { y: 0.6 }
+	})
 }
 
 async function loadData() {

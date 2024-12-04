@@ -186,12 +186,36 @@
 							<h4 class="title">Redacta tu <b>Mensaje</b></h4>
 							<form class="form" action="mailto:nuuk@gmail.com" method="post" enctype="text/plain">
 								<div class="group">
-									<input placeholder="‎" type="text" required="" />
-									<label for="name">Name</label>
+									<input placeholder="‎" type="text" id="name" name="name" required />
+									<label for="name">Nombre completo ✍️</label>
 								</div>
 								<div class="group">
-									<input placeholder="‎" type="email" id="email" name="email" required="" />
-									<label for="email">Email</label>
+									<input placeholder="‎" type="email" id="email" name="email" required />
+									<label for="email">Correo electrónico 📧</label>
+								</div>
+								<div class="group">
+									<input
+										placeholder="‎"
+										type="tel"
+										id="phone"
+										name="phone"
+										pattern="[0-9]{9}"
+										required
+									/>
+									<label for="phone">Teléfono 📞</label>
+								</div>
+								<div class="group">
+									<input placeholder="‎" type="date" id="eventDate" name="eventDate" required />
+									<label for="eventDate">Fecha del evento 📅</label>
+								</div>
+								<div class="group select">
+									<select id="eventType" name="eventType" required>
+										<option value="" disabled selected>Selecciona un tipo</option>
+										<option value="cumpleaños">Cumpleaños 🎉</option>
+										<option value="boda">Boda 💒</option>
+										<option value="corporativo">Corporativo 💼</option>
+									</select>
+									<label for="eventType">Tipo de evento 🎭</label>
 								</div>
 								<div class="group">
 									<textarea
@@ -199,11 +223,15 @@
 										id="comment"
 										name="comment"
 										rows="5"
-										required=""
+										required
 									></textarea>
-									<label for="comment">Comment</label>
+									<label for="comment">Comentarios o detalles 📝</label>
 								</div>
-								<button type="submit" id="form-submit">Submit</button>
+								<div class="group">
+									<input placeholder="‎" type="number" id="guests" name="guests" min="1" required />
+									<label for="guests">Número de invitados 👥</label>
+								</div>
+								<button type="submit" id="form-submit">Enviar 📨</button>
 							</form>
 						</div>
 						<iframe

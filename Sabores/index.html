@@ -100,20 +100,52 @@
 								action="mailto:nuuk@gmail.com"
 								method="post"
 								enctype="text/plain"
+								onsubmit="onSubmit()"
 							>
 								<div class="order-form__field">
-									<h4><label for="email">Correo</label></h4>
+									<h4><label for="email">Correo 📧</label></h4>
 									<input id="email" required type="email" placeholder="JohnDoe@mail.com" />
 								</div>
 								<div class="order-form__field">
-									<h4><label for="cantidad">Cantidad</label></h4>
-									<input id="cantidad" required type="number" placeholder="¿Cuántos deseas?" />
+									<h4><label for="cantidad">Cantidad 🍦</label></h4>
+									<input
+										id="cantidad"
+										required
+										type="number"
+										min="1"
+										placeholder="¿Cuántos deseas?"
+									/>
 								</div>
 								<div class="order-form__field">
-									<h4><label for="flavor">Sabor</label></h4>
-									<input id="flavor" required type="text" placeholder="Elige tu sabor favorito" />
+									<h4><label for="flavor">Sabor favorito 🍓</label></h4>
+									<input id="flavor" required type="text" placeholder="Ej. Fresa, chocolate..." />
 								</div>
-								<button type="submit" class="order-form__submit">Realizar Pedido</button>
+								<div class="order-form__field select">
+									<h4><label for="topping">Toppings adicionales 🥳</label></h4>
+									<select id="topping" required>
+										<option value="" disabled selected>Selecciona uno o más</option>
+										<option value="chispas">Chispas de chocolate 🍫</option>
+										<option value="nuez">Nuez 🥜</option>
+										<option value="caramelo">Caramelo 🍯</option>
+										<option value="fresas">Trozos de fresa 🍓</option>
+									</select>
+								</div>
+								<div class="order-form__field select">
+									<h4><label for="size">Tamaño 🥶</label></h4>
+									<select id="size" required>
+										<option value="" disabled selected>Selecciona el tamaño</option>
+										<option value="pequeño">Pequeño 🧁</option>
+										<option value="mediano">Mediano 🍨</option>
+										<option value="grande">Grande 🍧</option>
+									</select>
+								</div>
+								<div class="order-form__field">
+									<h4><label for="address">Dirección de entrega 📍</label></h4>
+									<input id="address" required type="text" placeholder="Ej. Calle 123, Ciudad" />
+								</div>
+								<button type="submit class="order-form__submit">
+									Realizar Pedido 🛒
+								</button>
 							</form>
 						</div>
 
@@ -250,6 +282,7 @@
 				<section id="modal-container"></section>
 			</div>
 		</article>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest"></script>

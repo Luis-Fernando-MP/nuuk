@@ -6,6 +6,7 @@
 	height: 100%;
 	min-height: 100vh;
 	background-color: #00000080;
+	backdrop-filter: blur(20px);
 	clip-path: circle(0% at 100% 0%);
 	transition: clip-path 0.6s cubic-bezier(0.79, 0.14, 0.15, 0.86);
 	display: flex;
@@ -50,6 +51,57 @@
 
 		.sub-title {
 			margin-bottom: 0;
+		}
+
+		&.event {
+			padding: 30px 15px;
+			text-align: center;
+			gap: 15px;
+
+			img {
+				max-height: 400px;
+				object-fit: cover;
+			}
+
+			p {
+				font-size: 1.2em;
+				max-width: 300px;
+				text-wrap: balance;
+			}
+
+			button {
+				border: none;
+				cursor: pointer;
+				padding: 10px 30px;
+				border-radius: 10px;
+				font-size: 1.2em;
+				background: pink;
+				color: rgb(133, 52, 84);
+				font-weight: 600;
+			}
+			&.corporativo {
+				background-color: rgb(166, 219, 255);
+				button {
+					background: rgb(32, 102, 163);
+					color: white;
+				}
+			}
+
+			&.boda {
+				background-color: rgb(255, 230, 230);
+				button {
+					background: rgb(255, 192, 203);
+					color: rgb(102, 51, 77);
+				}
+			}
+
+			&.cumple {
+				background-color: rgb(238, 201, 255);
+				button {
+					background: rgb(250, 237, 255);
+					color: rgb(61, 29, 76);
+				}
+			}
 		}
 	}
 

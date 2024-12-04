@@ -196,3 +196,16 @@ i {
 	opacity: 0;
 	animation: fadeInUp 1.5s ease-in-out forwards;
 }
+
+.select {
+	display: flex;
+	gap: 10px;
+	padding: 10px 0;
+	text-align: left;
+	select {
+		width: 100%;
+		padding: 10px;
+		background-color: var(--bg1);
+		border: none;
+	}
+}
